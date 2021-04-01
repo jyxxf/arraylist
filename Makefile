@@ -1,7 +1,9 @@
-main:main.o
-	gcc main.o -o main
+main:main.o arraylist.o
+	gcc main.o arraylist.o -o main
 	./main
-main.o:main.c
+main.o:main.c arraylist.h
 	gcc -c main.c
+arraylist.o:arraylist.c arraylist.h
+	gcc -c arraylist.c
 clean:
-	del main.o main.exe
+	del main.o main.exe arraylist.o

@@ -23,7 +23,7 @@ int arraylist_size(arraylist *a){
 }
 
 int *arraylist_at(arraylist *a, int index){
-    if(index>=a->size)
+    while(index>=a->size)
         arraylist_inflate(a);
     return &(a->array[index]);
 }
