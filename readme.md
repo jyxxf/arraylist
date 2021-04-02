@@ -1,1 +1,1 @@
-The programme creates an easy arraylist and does not leak memory.
+The program creates an easy arraylist and does not leak memory.
