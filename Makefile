@@ -6,4 +6,4 @@ main.o:main.c arraylist.h
 arraylist.o:arraylist.c arraylist.h
 	gcc -c arraylist.c
 clean:
-	rm main.o main.exe arraylist.o
+	rm main.o arraylist.o main
